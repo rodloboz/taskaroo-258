@@ -1,0 +1,7 @@
+<h1><%= @task.title %> <%= @task.done? ? "&#9989" : "&#10060" %></h1>
+<p>
+  <%= @task.description %>
+</p>
+
+<a href="/tasks/<%= @task.id %>/edit">Edit</a> |
+<a href="/tasks/<%= @task.id %>/delete">Delete</a>
